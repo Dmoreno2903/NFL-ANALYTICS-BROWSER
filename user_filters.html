@@ -33,23 +33,47 @@
                 <p>Empty filters will select ALL</p>
             </div>
     
-            <form class="form">
+            <form name="formulario1" class="form">
                  <ul>
                     <li>
                         <label for="team_name">Team Name</label>
-                        <select class="entrada"name="team_name"></select>
+                        <select name="team_name" class="entrada"name="team_name">
+                            <option value="None" disabled selected>Seleccione una opción</option>
+                            <option value="1">Miami Dolphins</option>
+                            <option value="2">Kansas City Chiefs</option>
+                        </select>
                     </li>
                     <li>
                         <label for="player_name">Player Name</label>
-                        <select class="entrada"name="player_name"></select>
+                        <select class="entrada"name="player_name">
+                            <option value="None" disabled selected>Seleccione una opción</option>
+                            <option value="Creed Humphrey">Creed Humphrey</option>
+                            <option value="Austin Reiter">Austin Reiter</option>
+                            <option value="Jamel Dean">Jamel Dean</option>
+                            <option value="Nolan Turner">Nolan Turner</option>
+                        </select>
                     </li>
                     <li>
                         <label for="season">Season</label>
-                        <select class="entrada"name="season"></select>
+                        <select class="entrada"name="season">
+                            <option value="None" disabled selected>Seleccione una opción</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
                     </li>
                     <li>
                         <label for="stats">Stats Type</label>
-                        <select class="entrada"name=stats></select>
+                        <select class="entrada"name=stats>
+                            <option value="None" disabled selected>Seleccione una opción</option>
+                            <option value="Returning">Returning</option>
+                            <option value="Pushing">Pushing</option>
+                            <option value="Scoring">Scoring</option>
+                            <option value="Kicking">Kicking</option>
+                            <option value="Receiving">Receiving</option>
+                            <option value="Defense">Defense</option>
+                            <option value="Rushing">Rushing</option>
+                            <option value="Passing">Passing</option>
+                        </select>
                     </li>
                 </ul>
             </form>
