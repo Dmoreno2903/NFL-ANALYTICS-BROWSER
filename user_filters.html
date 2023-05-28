@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL/User_filters</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Contenedor del titulo y la barra horizontal -->
+    <header class="header">
+        
+        <h1 id="tittle">NFL Analitycs Browser.</h1>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#">Team</a>
+            <a href="user_filters.html" class="home">User</a>
+            <a href="admin_data.html">Database Administrator</a>
+        </nav>
+
+    </header>
+
+    <div class="user_principal">
+
+        <div class="contenedor_user">
+            <div class="string">
+                <h3>Select Filter</h3>
+                <p>Empty filters will select ALL</p>
+            </div>
+    
+            <form class="form">
+                 <ul>
+                    <li>
+                        <label for="team_name">Team Name</label>
+                        <select class="entrada"name="team_name"></select>
+                    </li>
+                    <li>
+                        <label for="player_name">Player Name</label>
+                        <select class="entrada"name="player_name"></select>
+                    </li>
+                    <li>
+                        <label for="season">Season</label>
+                        <select class="entrada"name="season"></select>
+                    </li>
+                    <li>
+                        <label for="stats">Stats Type</label>
+                        <select class="entrada"name=stats></select>
+                    </li>
+                </ul>
+            </form>
+    
+            <div class="botones">
+                <button id="button_query">Query</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

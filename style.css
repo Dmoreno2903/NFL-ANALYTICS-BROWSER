@@ -1,0 +1,221 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081c29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tittle {
+    font-size: 23px;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a.home {
+    color: #00b4ff;
+}
+.navbar a:hover {
+    color: #00b4ff;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#link {
+    color: #ededed;
+    text-decoration: none;
+}
+
+.cont_imagenes {
+    text-decoration: none;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.type_user {
+    background-image: url(Resources/Brady-modified.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.type_admin {
+    background-image: url(Resources/Andy-modified.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.type_admin:hover {
+    background-image: url(Resources/Andy.jpg);
+}
+.type_user:hover {
+    background-image: url(Resources/Brady.jpg);
+}
+
+.text {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.user_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor_user {
+    margin-top: 80px;
+    display: inline;
+}
+
+.string {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    height: 80px;
+}
+
+.form {
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background: #ededed;
+    border-radius: 15px;
+    color: #00b4ff;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.form li {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada {
+    margin-left: 50px;
+    width: 350px;
+}
+
+.botones {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+    width: 800px;
+    height: 70px;
+}
+
+#button_query {
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #00b4ff;
+    border: 2px solid #00b4ff;
+    color: #ededed;
+}
+
+#button_query:hover {
+    background: #ededed;
+    border: 2px solid #ededed;
+    color: #00b4ff;
+}
+
+.cont_drap {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.drop-zone {
+    color: gray;
+    width: 700px;
+    height: 300px;
+    margin: 30px;
+    background: #ededed;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.drop-zoneA {
+    margin: 20px;
+}
+
+#button_upload {
+    margin: 0px 15px;
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #00b4ff;
+    border: 2px solid #00b4ff;
+    color: #ededed;
+}
+
+#button_upload:hover {
+    background: #ededed;
+    border: 2px solid #ededed;
+    color: #00b4ff;
+}
