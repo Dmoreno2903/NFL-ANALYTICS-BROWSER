@@ -19,21 +19,23 @@
             <a href="admin_data.html">Database Administrator</a>
         </nav>
     </header>
-    <div class="contenedor-rating">
-        <div class="rating">
-            <i class="fa fa-star star" onclick="rate(1)"></i>
-            <i class="fa fa-star star" onclick="rate(2)"></i>
-            <i class="fa fa-star star" onclick="rate(3)"></i>
-            <i class="fa fa-star star" onclick="rate(4)"></i>
-            <i class="fa fa-star star" onclick="rate(5)"></i>
+    <section class="main">
+        <div class="contenedor-rating">
+            <div class="rating">
+                <i class="fa fa-star star" onclick="rate(1)"></i>
+                <i class="fa fa-star star" onclick="rate(2)"></i>
+                <i class="fa fa-star star" onclick="rate(3)"></i>
+                <i class="fa fa-star star" onclick="rate(4)"></i>
+                <i class="fa fa-star star" onclick="rate(5)"></i>
+            </div>
+            <div class="container-review">
+                <label for="review">something to say?</label>
+                <textarea name="review" id="review" cols="30" rows="10"></textarea>
+            </div>
+            <div class="botones">
+                <button onclick="sendRating()" id="button_query">send rating</button>
+            </div>
         </div>
-        <div class="container-review">
-            <label for="review">something to say?</label>
-            <textarea name="review" id="review" cols="30" rows="10"></textarea>
-        </div>
-        <div class="botones">
-            <button onclick="sendRating()" id="button_query">send rating</button>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
