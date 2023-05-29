@@ -288,3 +288,50 @@ img{
     display: flex;
     flex-direction: column;
 }
+
+.contenedor_fotos{
+    display: flex;
+}
+
+.miembro {
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture_miembro {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.name_miembro {
+    font-size: 15px;
+}
+
+#angel {
+    background-image: url(Resources/angel.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#diego {
+    background-image: url(Resources/diego.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mejia {
+    background-image: url(Resources/mejia.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#roger {
+    background-image: url(Resources/roger.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
