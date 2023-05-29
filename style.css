@@ -261,3 +261,29 @@ img{
     height: 676px;
     justify-content: space-around;
 }
+.contenedor-rating{
+    position: fixed;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 486px;
+}
+
+.rating .star {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+.rating .star.selected {
+    color: gold;
+}
+
+.container-review{
+    display: flex;
+    flex-direction: column;
+}
