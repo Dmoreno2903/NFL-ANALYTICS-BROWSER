@@ -254,13 +254,12 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
     position: fixed;
-    height: 300px;
     width: 50%;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 676px;
     justify-content: center;
 }
 .contenedor-rating{
