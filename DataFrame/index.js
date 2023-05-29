@@ -1,27 +1,8 @@
-let sendRating = ()=>
-{
-  if(!res)window.alert("please select a rate");
-  else window.confirm("rating sent successfully");
-  console.log("Rating send",res);
-}
-let executeQuery = ()=> window.location.href = 'data_frame.html';
-let executeRating = ()=> window.location.href = 'rating.html';
-var jugadores = null;
-fetch('jugadores.json')
-  .then(response => response.json())
-  .then(data => {
-    jugadores=data;
-  })
-  .then(
-    ()=> renderizar(jugadores)
-  )
-  .catch(error => {
-    console.log('Error:', error);
-  });
+let executeRating = ()=> window.location.href = '../Rating/rating.html';
 
-let renderizar = (jugadores) =>
+console.log(jugadores);
+let renderizar = () =>
 {
-
   console.log(jugadores);
   const head = document.getElementById("table-head");
   const body = document.getElementById("table-body");
@@ -66,17 +47,6 @@ let renderizar = (jugadores) =>
   }
   );
 }
+window.onload = ()=> renderizar();
 
-var res = 0;
-let  rate = (estrellas) =>
-{
-  res = estrellas;
-  var starElements = document.getElementsByClassName("star");
-  for (var i = 0; i < starElements.length; i++) {
-    if (i < estrellas) {
-      starElements[i].classList.add("selected");
-    } else {
-      starElements[i].classList.remove("selected");
-    }
-  }
-}
+

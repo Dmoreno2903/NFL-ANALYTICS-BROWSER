@@ -1,0 +1,242 @@
+var jugadores = [
+    {
+      "stats":[
+        "Player",
+        "PassYds",
+        "Yds/Att",
+        "Att",
+        "Cmp",
+        "Cmp%",
+        "TD",
+        "INT",
+        "Rate",
+        "1st",
+        "1st%",
+        "20+",
+        "40+",
+        "Lng",
+        "Sck",
+        "SckY"
+      ]
+    },
+    {
+      "id":1,
+      "nombre": "Patrick Mahomes",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/vs40h82nvqaqvyephwwu",
+      "estadisticas": {
+        "intentosPase": 588,
+        "completos": 390,
+        "yardasPase": 4740,
+        "touchdowns": 38,
+        "interceptaciones": 6,
+        "porcentajeCompletos": 66.3,
+        "promedioYardas": 8.1,
+        "rating": 108.2,
+        "sacksRecibidos": 22,
+        "yardasPerdidas": 147,
+        "pasesLargos": 45,
+        "pasesGanadores": 10,
+        "pasesLargosCompletos": 38,
+        "pasesInterceptados": 6,
+        "pasesIncompletos": 198
+      }
+    },
+    {
+      "id":2,
+      "nombre": "Tom Brady",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/q7dpdlxyu5rs05rgh1le",
+      "estadisticas": {
+        "intentosPase": 610,
+        "completos": 401,
+        "yardasPase": 4820,
+        "touchdowns": 40,
+        "interceptaciones": 12,
+        "porcentajeCompletos": 65.7,
+        "promedioYardas": 7.9,
+        "rating": 102.2,
+        "sacksRecibidos": 21,
+        "yardasPerdidas": 143,
+        "pasesLargos": 38,
+        "pasesGanadores": 12,
+        "pasesLargosCompletos": 30,
+        "pasesInterceptados": 12,
+        "pasesIncompletos": 209
+      }
+    },
+    {
+      "id":3,
+      "nombre": "Aaron Rodgers",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/uclmpbaoqilea8y8vmez",
+      "estadisticas": {
+        "intentosPase": 526,
+        "completos": 372,
+        "yardasPase": 4428,
+        "touchdowns": 40,
+        "interceptaciones": 4,
+        "porcentajeCompletos": 70.7,
+        "promedioYardas": 8.4,
+        "rating": 121.5,
+        "sacksRecibidos": 20,
+        "yardasPerdidas": 125,
+        "pasesLargos": 78,
+        "pasesGanadores": 8,
+        "pasesLargosCompletos": 18,
+        "pasesInterceptados": 4,
+        "pasesIncompletos": 154
+      }
+    },
+    {
+      "id":4,
+      "nombre": "Dak Prescott",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/ofhu8bvafse5folcjzyu",
+      "estadisticas": {
+        "intentosPase": 596,
+        "completos": 388,
+        "yardasPase": 4448,
+        "touchdowns": 37,
+        "interceptaciones": 10,
+        "porcentajeCompletos": 65.1,
+        "promedioYardas": 7.5,
+        "rating": 99.7,
+        "sacksRecibidos": 32,
+        "yardasPerdidas": 225,
+        "pasesLargos": 73,
+        "pasesGanadores": 5,
+        "pasesLargosCompletos": 21,
+        "pasesInterceptados": 10,
+        "pasesIncompletos": 208
+      }
+    },
+    {
+      "id":5,
+      "nombre": "Josh Allen",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/btfnqtymqsqgybnv4u6n",
+      "estadisticas": {
+        "intentosPase": 572,
+        "completos": 396,
+        "yardasPase": 4634,
+        "touchdowns": 36,
+        "interceptaciones": 10,
+        "porcentajeCompletos": 69.2,
+        "promedioYardas": 8.1,
+        "rating": 107.2,
+        "sacksRecibidos": 26,
+        "yardasPerdidas": 188,
+        "pasesLargos": 75,
+        "pasesGanadores": 6,
+        "pasesLargosCompletos": 32,
+        "pasesInterceptados": 10,
+        "pasesIncompletos": 176
+      }
+    },
+    {
+      "id":6,
+      "nombre": "Russell Wilson",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/gebzv2aljujgleboe4ns",
+      "estadisticas": {
+        "intentosPase": 558,
+        "completos": 376,
+        "yardasPase": 4402,
+        "touchdowns": 40,
+        "interceptaciones": 13,
+        "porcentajeCompletos": 67.4,
+        "promedioYardas": 7.9,
+        "rating": 104.5,
+        "sacksRecibidos": 47,
+        "yardasPerdidas": 355,
+        "pasesLargos": 69,
+        "pasesGanadores": 5,
+        "pasesLargosCompletos": 23,
+        "pasesInterceptados": 13,
+        "pasesIncompletos": 182
+      }
+    },
+    {
+      "id":7,
+      "nombre": "Matthew Stafford",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/eteieq8zzws1fbcgzbip",
+      "estadisticas": {
+        "intentosPase": 529,
+        "completos": 374,
+        "yardasPase": 4750,
+        "touchdowns": 38,
+        "interceptaciones": 10,
+        "porcentajeCompletos": 70.7,
+        "promedioYardas": 9,
+        "rating": 108.1,
+        "sacksRecibidos": 39,
+        "yardasPerdidas": 280,
+        "pasesLargos": 79,
+        "pasesGanadores": 6,
+        "pasesLargosCompletos": 27,
+        "pasesInterceptados": 10,
+        "pasesIncompletos": 155
+      }
+    },
+    {
+      "id":8,
+      "nombre": "Justin Herbert",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/qknkhe4w6liovjubzmnh",
+      "estadisticas": {
+        "intentosPase": 596,
+        "completos": 396,
+        "yardasPase": 4726,
+        "touchdowns": 38,
+        "interceptaciones": 10,
+        "porcentajeCompletos": 66.4,
+        "promedioYardas": 7.9,
+        "rating": 98.3,
+        "sacksRecibidos": 31,
+        "yardasPerdidas": 202,
+        "pasesLargos": 75,
+        "pasesGanadores": 7,
+        "pasesLargosCompletos": 25,
+        "pasesInterceptados": 10,
+        "pasesIncompletos": 200
+      }
+    },
+    {
+      "id":9,
+      "nombre": "Kyler Murray",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/t_lazy/f_auto/league/nkb9x92lbea6ayknzoba",
+      "estadisticas": {
+        "intentosPase": 558,
+        "completos": 370,
+        "yardasPase": 3971,
+        "touchdowns": 26,
+        "interceptaciones": 12,
+        "porcentajeCompletos": 66.3,
+        "promedioYardas": 7.1,
+        "rating": 94.3,
+        "sacksRecibidos": 27,
+        "yardasPerdidas": 147,
+        "pasesLargos": 77,
+        "pasesGanadores": 4,
+        "pasesLargosCompletos": 19,
+        "pasesInterceptados": 12,
+        "pasesIncompletos": 188
+      }
+    },
+    {
+      "id":10,
+      "nombre": "Lamar Jackson",
+      "foto":"https://static.www.nfl.com/image/private/t_headshot_desktop/f_auto/league/gylnuxkxgm3zd4j0d0ku",
+      "estadisticas": {
+        "intentosPase": 588,
+        "completos": 395,
+        "yardasPase": 3378,
+        "touchdowns": 28,
+        "interceptaciones": 9,
+        "porcentajeCompletos": 67.2,
+        "promedioYardas": 5.7,
+        "rating": 93.4,
+        "sacksRecibidos": 39,
+        "yardasPerdidas": 246,
+        "pasesLargos": 80,
+        "pasesGanadores": 6,
+        "pasesLargosCompletos": 21,
+        "pasesInterceptados": 9,
+        "pasesIncompletos": 193
+      }
+    }
+  ]
