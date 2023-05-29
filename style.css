@@ -250,16 +250,18 @@ img{
     margin-right: 10px;
 }
 .contenedor-frame {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    height: auto;
+    height: 300px;
+    width: 50%;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 676px;
-    justify-content: space-around;
+    justify-content: center;
 }
 .contenedor-rating{
     position: fixed;
