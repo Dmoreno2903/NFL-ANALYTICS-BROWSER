@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFL</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-
-    <!-- Contenedor del titulo y la barra horizontal -->
-    <header class="header">
+    <head>
         
-        <h1 id="tittle">NFL Analytics Browser.</h1>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NFL</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="modal.css">
+        
+    </head>
+    <body >
+        <div class="contenedor-imagen" >
 
-        <nav class="navbar">
-            <a href="index.html" class="home">Home</a>
-            <a href="./Team/team.html">Team</a>
-            <a href="./UserFilters/user_filters.html">User</a>
-            <a href="./AdminData/admin_data.html">Database Administrator</a>
-        </nav>
-
-    </header>
-   <!-- Div contenedor de los tipos de usuario -->
-   <section class="main">
-
-        <div class="cont_imagenes" style="text-decoration: none">
-            <a id="link" href="./UserFilters/user_filters.html">
-                <div class="type_user">
-                    <h1 class="text" >User</a>
-                </div>
-            </a>
-    
-            <a id="link" href="./AdminData/admin_data.html">
-                <div class="type_admin">
-                    <h1 class="text">Database Administrator</a>
-                </div>
-            </a>
+            <img class="imagen" src="schemePreconceptual.svg" alt="">
+        <!-- Dinamics relations -->
+            <div  class="button" onclick="handleClick(0)" style="left: 2336px;top: 360px;"></div>
+            <div  class="button" onclick="handleClick(0)" style="left: 2336px;top: 711px;height: 500px;"></div>
+            <div  class="button" onclick="handleClick(1)" style="left: 2697px;top: 1385px;"></div>
+            <div  class="button" onclick="handleClick(2)" style="left: 2697px;top: 1512px;"></div>
+            <div  class="button" onclick="handleClick(3)" style="left: 2697px;top: 1633px;"></div>
+            <!-- Class concept -->
+            <div  class="button" onclick="handleClick(4)" style="left: 801px;top: 2121px;"></div>
+            <div  class="button" onclick="handleClick(5)" style="left: 673px;top: 1896px;"></div>
+            <div  class="button" onclick="handleClick(6)" style="left: 673px;top: 1704px;"></div>
+            <div  class="button" onclick="handleClick(7)" style="left: 1032px;top: 1721px;"></div>
+            <div  class="button" onclick="handleClick(8)" style="left: 113px;top: 335px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(9)" style="left: 113px;top: 1040px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(10)" style="left: 1136px;top: 1040px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(11)" style="left: 928px;top: 1040px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(12)" style="left: 928px;top: 337px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(13)" style="left: 1136px;top: 337px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(14)" style="left: 1962px;top: 400px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(15)" style="left: 1956px;top: 1104px;width: 84px;"></div>
+            <div  class="button" onclick="handleClick(16)" style="left: 2473px;top: 1384px;width: 80px;"></div>
+            <div  class="button" onclick="handleClick(17)" style="left: 2900px;top: 1384px;width: 80px;"></div>
+            <div  class="button" onclick="handleClick(18)" style="left: 2900px;top: 1512px;width: 80px;"></div>
+            <div  class="button" onclick="handleClick(19)" style="left: 2888px;top: 1825px;width: 80px;"></div>
+            <div  class="button" onclick="handleClick(20)" style="left: 3287px;top: 1616px;width: 104px;"></div>
+            <div  class="button" onclick="handleClick(21)" style="left: 2592px;top: 682px;width: 133px;"></div>
+            <!-- KPIS -->
+            <div  class="button" onclick="handleClick(22)" style="left: 2921px;top: 1631px;width: 88px;"></div>
+            <div  class="button" onclick="handleClick(23)" style="left: 3012px;top: 1822px;width: 88px;"></div>
+            <div  class="button" onclick="handleClick(24)" style="left: 3009px;top: 1208px;width: 90px"></div>
+            <div  class="button" onclick="handleClick(25)" style="left: 2471px;top: 1312px;width: 99px;"></div>
+            <div  class="button" onclick="handleClick(26)" style="left: 686px;top: 2183px;width: 121px;"></div>
         </div>
-
-   </section>
-</body>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
